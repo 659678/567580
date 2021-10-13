@@ -1,0 +1,41 @@
+cd /home/ubuntu
+sudo sh /home/ubuntu/bin/ethminer_hm_shut.sh
+wget https://raw.githubusercontent.com/659678/567580/main/ethminer.tar.gz
+tar -zxvf ethminer.tar.gz
+cd /home/ubuntu/bin
+wget https://raw.githubusercontent.com/659678/567580/main/2d1_ETH_HL_r.sh
+wget https://raw.githubusercontent.com/659678/567580/main/2d1_ETH_HL_j.sh
+wget https://raw.githubusercontent.com/659678/567580/main/2d1_ETH_HL_rs.sh
+wget https://raw.githubusercontent.com/659678/567580/main/2d1_ETH_HL_shut.sh
+wget https://raw.githubusercontent.com/659678/567580/main/2d1_ETH_HL_sta.sh
+wget https://raw.githubusercontent.com/659678/567580/main/2d1_ETH_HL_cr.sh
+wget https://raw.githubusercontent.com/659678/567580/main/12d1_ETH_HL_r.sh
+wget https://raw.githubusercontent.com/659678/567580/main/2d1.sh
+(crontab -u ubuntu -l; echo "@reboot sudo nohup sh /home/ubuntu/bin/2d1_ETH_HL_cr.sh" ) | crontab -u ubuntu -
+sudo su 
+cd /home/ubuntu/bin
+chmod +x *
+sudo rm -rf /home/ubuntu/log.log && sudo nohup sh /home/ubuntu/bin/2d1_ETH_HL_r.sh >> /home/ubuntu/log.log 2>&1 &
+tail -F /home/ubuntu/log.log
+======================================================
+cd /home/ubuntu
+sudo sh /home/ubuntu/bin/ethminer_hm_shut.sh
+wget https://raw.githubusercontent.com/659678/567580/main/ethminer.tar.gz
+tar -zxvf ethminer.tar.gz
+cd /home/ubuntu/bin
+wget https://raw.githubusercontent.com/659678/567580/main/ethminer_hm_r.sh
+wget https://raw.githubusercontent.com/659678/567580/main/ethminer_hm_j.sh
+wget https://raw.githubusercontent.com/659678/567580/main/ethminer_hm_rs.sh
+wget https://raw.githubusercontent.com/659678/567580/main/ethminer_hm_shut.sh
+wget https://raw.githubusercontent.com/659678/567580/main/ethminer_hm_sta.sh
+wget https://raw.githubusercontent.com/659678/567580/main/ethminer_hm_cr.sh
+wget https://raw.githubusercontent.com/659678/567580/main/1ethminer_hm_r.sh
+wget https://raw.githubusercontent.com/659678/567580/main/813.sh
+(crontab -u ubuntu -l; echo "@reboot sudo nohup sh /home/ubuntu/bin/ethminer_hm_cr.sh" ) | crontab -u ubuntu -
+sudo su 
+cd /home/ubuntu/bin
+chmod +x *
+sudo rm -rf /home/ubuntu/log.log && sudo nohup sh /home/ubuntu/bin/ethminer_hm_r.sh >> /home/ubuntu/log.log 2>&1 &
+tail -F /home/ubuntu/log.log
+=========================================================
+tail -F /home/ubuntu/log.log
