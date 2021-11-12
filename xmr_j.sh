@@ -1,5 +1,5 @@
 #!/bin/bash
-PROCESS="xmr";
+PROCESS="xmrig";
 
 if ps ax | grep -v grep | grep $PROCESS > /dev/null
 then
