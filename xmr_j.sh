@@ -1,7 +1,8 @@
 #!/bin/bash
 PROCESS="xmrig";
+STATUS=$(/bin/ps ax | grep -w "$PROCESS" | grep -v grep)
 
-if ps ax | grep -v grep | grep $PROCESS > /dev/null
+if [ "$STATUS" != "" ]
 then
         echo "$PROCESS is running" ;
                 #nothing todo
