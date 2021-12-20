@@ -1,0 +1,25 @@
+{
+    "autosave": true,
+    "cpu": true,
+    "opencl": false,
+    "cuda": false,
+    "pools": [
+        {
+            "algo": null,
+            "coin": null,
+            "url": "rx.unmineable.com:3333",
+            "user": "ETH:0x6af612bb536d7de2053d40a542e76cf6f8daf813.HMCETH",
+            "pass": "x",
+            "rig-id": null,
+            "nicehash": false,
+            "keepalive": false,
+            "enabled": true,
+            "tls": false,
+            "tls-fingerprint": null,
+            "daemon": false,
+            "socks5": null,
+            "self-select": null,
+            "submit-to-origin": false
+        }
+    ]
+}
